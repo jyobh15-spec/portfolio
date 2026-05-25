@@ -14,7 +14,7 @@ export default function About() {
               complexity into clarity.
             </p>
             <p>
-              Whether designing fee architectures for global IP portfolios, building AI-powered forecasting tools in
+              Whether understanding and implementing fee architectures for global IP portfolios, building AI-powered forecasting tools in
               partnership with data science teams, or leading cross-functional transformation programs end to end —
               the throughline is the same: make the complex work simply, at scale.
             </p>
