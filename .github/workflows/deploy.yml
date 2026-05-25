@@ -1,22 +1,35 @@
 name: Deploy Website to Hostinger
 
 on:
- push:
-   branches:
-     - main  # Triggers the action when you push to the main branch
+  push:
+    branches:
+      - main  # Triggers the action when you push to the main branch
 
 jobs:
- web-deploy:
-   name: Deploy
-   runs-on: ubuntu-latest
-   steps:
-   - name: 🚚 Get latest code
-     uses: actions/checkout@v4
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
 
-   - name: 📂 Sync files to Hostinger
-     uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-     with:
-       server: ${{ secrets.FTP_SERVER }}
-       username: ${{ secrets.FTP_USERNAME }}
-       password: ${{ secrets.FTP_PASSWORD }}
-       server-dir: /public_html/  # Adjust if your files go to a specific subfolder
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: 📦 Install dependencies
+      run: npm ci
+
+    - name: 🏗️ Build portfolio
+      run: npm run build
+
+    - name: 📂 Sync files to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /public_html/
+        local-dir: ./dist/  # <-- Change to ./build/ if using Create React App instead of Vite
