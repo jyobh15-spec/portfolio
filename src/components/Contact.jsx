@@ -32,6 +32,12 @@ const links = [
     href: 'mailto:jyo.bh15@gmail.com',
   },
   {
+    icon: Mail,
+    label: 'Email',
+    display: 'contact@skillmining.org',
+    href: 'mailto:contact@skillmining.org',
+  },
+  {
     icon: LinkedinIcon,
     label: 'LinkedIn',
     display: 'linkedin.com/in/jyoti-bhatt',
