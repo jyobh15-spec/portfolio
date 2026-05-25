@@ -19,7 +19,7 @@ export default function About() {
               the throughline is the same: make the complex work simply, at scale.
             </p>
             <p>
-              What sets Jyoti apart is range. The financial vocabulary to speak to CFOs. The technical fluency to
+              What sets Jyoti apart is her diverse range of skills. The financial vocabulary to speak to CFOs. The technical fluency to
               collaborate with data scientists. The people leadership to bring sales teams along on the journey.
               Backed by credentials from ISB and global bodies including PMI and Scrum Alliance, Jyoti doesn't just
               manage operations — she builds the systems and strategies that make them scale.
