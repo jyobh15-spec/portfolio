@@ -22,7 +22,7 @@ export default function About() {
               What sets Jyoti apart is her diverse range of skills. The financial vocabulary to speak to CFOs. The technical fluency to
               collaborate with data scientists. The people leadership to bring sales teams along on the journey.
               Backed by credentials from ISB and global bodies including PMI and Scrum Alliance, Jyoti doesn't just
-              manage operations — she builds the systems and strategies that make them scale.
+              manage operations — she builds the systems and strategies that make them scale. She can be a great asset to any organization looking to navigate the complexities of modern business with clarity and confidence.
             </p>
           </div>
 
